@@ -25,6 +25,6 @@ def send_email_from_app():
                                 [receiver_email],
                                 reply_to=[settings.APPLICATION_EMAIL]
                                 )
-    # this is the crucial part that sends email as html content but not as a plain text
+  
     email_msg.content_subtype = 'html'
     email_msg.send(fail_silently=False)
