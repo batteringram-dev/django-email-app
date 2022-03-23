@@ -18,7 +18,7 @@ def send_email_from_app():
     html_tpl_path = 'email_templates/welcome.html'
     context_data =  {'name': 'JK'}
     email_html_template = get_template(html_tpl_path).render(context_data)
-    receiver_email = 'test+1@gmail.com'
+    receiver_email = ''
     email_msg = EmailMessage('Welcome from django app', 
                                 email_html_template, 
                                 settings. APPLICATION_EMAIL,
