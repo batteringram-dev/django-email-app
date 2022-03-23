@@ -1,11 +1,13 @@
+#importing libraries
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.template.loader import get_template
 from django.core.mail import EmailMessage
 from django.conf import settings 
 
-# Create your views here.
+# Create your views here
 
+#dummy response to check if the api is working properly
 def email_api(request):
     send_email_from_app()
     data = {
